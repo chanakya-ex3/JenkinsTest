@@ -27,5 +27,16 @@ services:
       DB_PASSWORD: weatherpass
       DB_NAME: weatherdb
 
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: weather-frontend
+    ports:
+      - "8000:8000"
+    depends_on:
+      - backend
+    restart: unless-stopped
+
 volumes:
   pgdata:
