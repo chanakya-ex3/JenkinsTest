@@ -3,22 +3,21 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Weather app</title>
+  <title>Weather App</title>
   <style>
     body {
       font-family: Arial, sans-serif;
       text-align: center;
       margin: 20px;
-      background: linear-gradient(to right, #2c3e50, #34495e);
-      color: white;
+      background: linear-gradient(to right, #74ebd5, #acb6e5);
     }
     .container {
       max-width: 400px;
       margin: auto;
       padding: 20px;
       border-radius: 10px;
-      background: #2c3e50;
-      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+      background: white;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     }
     input, button {
       padding: 10px;
@@ -27,32 +26,26 @@
       border: none;
       border-radius: 5px;
     }
-    input { 
-      border: 1px solid #444;
-      background: #222;
-      color: white;
-    }
+    input { border: 1px solid #ccc; }
     button {
-      background: #E74C3C;
+      background: #007BFF;
       color: white;
       cursor: pointer;
     }
-    button:hover { 
-      background: #C0392B; 
-    }
+    button:hover { background: #0056b3; }
     .weather-info, .history {
       margin-top: 20px;
       padding: 10px;
       border-radius: 5px;
-      background: #34495e;
+      background: #f8f9fa;
     }
-    .temperature { color: #E74C3C; font-weight: bold; }
-    .humidity { color: #3498db; font-weight: bold; }
-    .wind-speed { color: #2ecc71; font-weight: bold; }
-    .condition { font-style: italic; color: #bdc3c7; }
-    .advice { font-weight: bold; color: #f39c12; }
+    .temperature { color: #FF5733; font-weight: bold; }
+    .humidity { color: #1E90FF; font-weight: bold; }
+    .wind-speed { color: #28A745; font-weight: bold; }
+    .condition { font-style: italic; color: #6C757D; }
+    .advice { font-weight: bold; color: #DC3545; }
     .history-item {
-      border-top: 1px solid #555;
+      border-top: 1px solid #ddd;
       margin-top: 10px;
       padding-top: 10px;
       text-align: left;
